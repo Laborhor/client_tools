@@ -1,5 +1,8 @@
 import requests
 import json
+import client_tools
+import os
+
 class SpeehToText(object):
     url = "http://127.0.0.1:9977/api"
 
@@ -10,7 +13,14 @@ class SpeehToText(object):
         pass
 
     def load_stt_url(self):
-        with open("../config.json","r",encoding="utf-8") as f:
+
+        ls = str(client_tools.__file__).split("\\")
+        path = ls[0]
+        for i in ls[1:-1]:
+            path = path + "\\" + i
+        path = path + "\\" + "config.json"
+
+        with open(path,"r",encoding="utf-8") as f:
             config = json.load(f)
             SpeehToText.url = config["stt"]
 

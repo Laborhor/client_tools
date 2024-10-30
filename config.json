@@ -1,9 +1,10 @@
 {
   "chat": {
-    "chatgml6b": "http://127.0.0.1:8000",
+    "chatgml6b": "http://chatglm6b.f3.ttvt.cc//chat",
     "luckycola": "https://luckycola.com.cn/hunyuan/txhy",
     "luckycola_wxyy": "https://luckycola.com.cn/ai/openwxyy"
   },
-  "stt": "http://127.0.0.1:9977/api",
-  "tts": "http://127.0.0.1:5000"
+  "stt": "http://stt.if4.ttyt.cc//api",
+  "tts": "http://tts.ihk.fghk.top",
+  "HomeStateData": "http://chatglm6b.f3.ttvt.cc/home"
 }
