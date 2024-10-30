@@ -1,5 +1,7 @@
 import requests
 import json
+import client_tools
+import os
 
 class chatgml():
     """
@@ -18,7 +20,14 @@ class chatgml():
         pass
 
     def load_chatgml6b_url(self):
-        with open('../config.json', 'r', encoding='utf-8') as f:
+
+        ls = str(client_tools.__file__).split("\\")
+        path = ls[0]
+        for i in ls[1:-1]:
+            path = path + "\\" + i
+        path = path + "\\" + "config.json"
+
+        with open(path, 'r', encoding='utf-8') as f:
             config = json.load(f)
             chatgml.url = config["chat"]['chatgml6b']
     def make_send_json(self,ques):
@@ -36,7 +45,7 @@ class chatgml():
     def post(self,user_ed):
         json_payload = json.dumps(user_ed)
         response = requests.post(chatgml.url,data=json_payload,headers=chatgml.headers)
-        return ai.get_assitant(response.json())
+        return self.get_assitant(response.json())
 
 
 if __name__ == '__main__':

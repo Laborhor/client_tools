@@ -1,5 +1,6 @@
 import requests
 import json
+
 class LuckyCola_wxyy():
     """
     注册网址：https://luckycola.com.cn/public/dist/#/

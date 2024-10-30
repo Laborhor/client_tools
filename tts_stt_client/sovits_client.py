@@ -1,3 +1,5 @@
+import client_tools
+import os
 import requests
 import urllib
 import json
@@ -11,7 +13,14 @@ class SovitsClient(object):
         self.load_tts_url()
 
     def load_tts_url(self):
-        with open("../config.json","r",encoding="utf-8") as f:
+
+        ls = str(client_tools.__file__).split("\\")
+        path = ls[0]
+        for i in ls[1:-1]:
+            path = path + "\\" + i
+        path = path + "\\" + "config.json"
+
+        with open(path,"r",encoding="utf-8") as f:
             config = json.load(f)
             SovitsClient.SovitsUrl = config['tts']
 
