@@ -7,7 +7,6 @@ import json
 class SovitsClient(object):
     SovitsUrl = 'http://127.0.0.1:5000'
 
-
     def __init__(self):
 
         self.load_tts_url()
