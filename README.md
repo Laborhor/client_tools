@@ -13,11 +13,12 @@
 ***./client_tools/config.json***
 ```json
 {
-  "chatgml6b": "http://127.0.0.1:8000",    //访问url地址
-  "luckycola": "https://luckycola.com.cn/hunyuan/txhy",  //访问url地址
-  "luckycola_wxyy": "https://luckycola.com.cn/ai/openwxyy", //访问url地址
-  "stt": "http://127.0.0.1:9977/api",//访问url地址
-  "tts": "http://127.0.0.1:5000"  //访问url地址
+  "chatgml6b": "http://chatglm6b.f3.ttvt.cc",
+  "luckycola": "https://luckycola.com.cn/hunyuan/txhy",
+  "luckycola_wxyy": "https://luckycola.com.cn/ai/openwxyy",
+  "stt": "http://stt.if4.ttyt.cc/api",
+  "tts": "http://tts.if4.ttyt.cc",
+  "HomeStateData": "http://chatglm6b.f3.ttvt.cc/home" //暂时关闭
 }
 ```
 * 此为默认地址
@@ -125,20 +126,13 @@ DrawHomeStateCMD(num=10):
     - [x] 腾讯混元
 - [x] 添加STT客户端模块
 - [x] 提供智能体对话支持模块
-  - [ ] 添加更多支持的Prompt在 ./client_tools/chat_client/prompt.json 文件下
-  * 目前支持的如下
-    * Linux
-      * 我想让你充当一个linux终端。我将键入命令，您将用终端应该显示的内容进行回复。我希望您只回复一个唯一代码块中的终端输出，而不回复其他内容。不要写解释。除非我指示你，否则不要键入命令。当我需要用英语告诉你一些事情时，我的第一个命令是 {}
-    * 翻译
-      * 现在你是一个专业的英汉互译器，我输入中文时，你会将其翻译成英文，我输入英文时，你会将其翻译成中文。接下来，我输入的内容是 {}"
-    * 励志教练
-      * 我想让你成为一名励志教练。我会为你提供一些关于某人目标和挑战的信息，你的工作是制定能够帮助此人实现目标的策略。这可能包括提供积极的肯定，给出有用的建议或建议他们可以做些什么来达到最终目标。我的第一个要求是 {}。
+  - [x] 添加更多支持的Prompt在 ./client_tools/chat_client/prompt.json 文件下
 - [x] 添加获取此时室内温度及湿度客户端模块
 ## dirvers文件夹下
 - [ ] 制作音频输入模块
-  - [x] windows添加录音模块
+  - [x] pyaudio添加录音模块
 - [ ] 制作音频输出模块
-    - [x] windows添加放音模块
+    - [x] pyaudio添加放音模块
 - [ ] 制作中断管理模块
 ## flowsheet文件夹下
 - [x] 添加工作流程图
@@ -157,3 +151,4 @@ DrawHomeStateCMD(num=10):
   - [x] 智能体对话
 - [ ] 说书APP
 - [ ] 打印家庭状况 demo
+  - [x] 终端打印 
