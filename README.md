@@ -153,5 +153,5 @@ DrawHomeStateCMD(num=10):
 - [ ] 打印家庭状况 demo
   - [x] 终端打印 
 - [ ] orangepi适配
- - [x] 语音对话demo
- - [x] 家庭状况检测demo 
+  - [x] 语音对话demo
+  - [x] 家庭状况检测demo 
