@@ -120,7 +120,7 @@ DrawHomeStateCMD(num=10):
 - [x] 添加下载进度条
 - [x] 添加TTS客户端模块
 - [ ] 添加chat客户端模块
-  - [x] 提供chatgml6b模块
+  - [x] 提供chatgml3-6b模块
   - [x] 提供luckycola 厂商提供api
     - [x] 文心一言
     - [x] 腾讯混元
