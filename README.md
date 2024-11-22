@@ -18,7 +18,7 @@
   "luckycola_wxyy": "https://luckycola.com.cn/ai/openwxyy",
   "stt": "http://stt.if4.ttyt.cc/api",
   "tts": "http://tts.if4.ttyt.cc",
-  "HomeStateData": "http://chatglm6b.f3.ttvt.cc/home" //暂时关闭
+  "HomeStateData": "http://home.if4.ttyt.cc"
 }
 ```
 * 此为默认地址
