@@ -155,3 +155,7 @@ DrawHomeStateCMD(num=10):
 - [ ] orangepi适配
   - [x] 语音对话demo
   - [x] 家庭状况检测demo 
+***
+部分文档链接
+【腾讯文档】技术文档
+https://docs.qq.com/doc/DWGZuelJrdElCbWFm
