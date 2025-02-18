@@ -124,6 +124,7 @@ DrawHomeStateCMD(num=10):
   - [x] 提供luckycola 厂商提供api
     - [x] 文心一言
     - [x] 腾讯混元
+    - [x] 众多模型均适用的调用函数文件
 - [x] 添加STT客户端模块
 - [x] 提供智能体对话支持模块
   - [x] 添加更多支持的Prompt在 ./client_tools/chat_client/prompt.json 文件下
